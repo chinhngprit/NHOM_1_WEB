@@ -36,6 +36,7 @@ CREATE TABLE `nguoi_dung` (
     `gioi_tinh` ENUM('NAM', 'NU', 'KHAC') COLLATE utf8mb4_unicode_ci DEFAULT NULL,
     `loai_tai_khoan` ENUM('ADMIN', 'MEMBER') COLLATE utf8mb4_unicode_ci DEFAULT 'MEMBER',
     `trang_thai` ENUM('ACTIVE', 'BLOCKED', 'UNVERIFIED') COLLATE utf8mb4_unicode_ci DEFAULT 'ACTIVE',
+    `verification_token` VARCHAR(64) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
     `ngay_tao` DATETIME DEFAULT CURRENT_TIMESTAMP,
     `ngay_cap_nhat` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     PRIMARY KEY (`id`),
