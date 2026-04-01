@@ -98,6 +98,25 @@ CREATE TABLE `ma_giam_gia` (
     UNIQUE KEY `uk_ma_code` (`ma_code`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `banner_quang_cao`
+--
+
+CREATE TABLE `banner_quang_cao` (
+  `id` int NOT NULL,
+  `tieu_de` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Tên banner để admin dễ quản lý',
+  `hinh_anh_desktop` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Link ảnh cho màn hình máy tính',
+  `hinh_anh_mobile` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT 'Link ảnh cho màn hình điện thoại',
+  `link_dich` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'URL khi user click vào banner',
+  `vi_tri` enum('HOME_HERO','HOME_SIDE','FLOATING_BOTTOM_LEFT','POPUP','CATEGORY_TOP') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Vị trí hiển thị trên web',
+  `thu_tu` int DEFAULT '0' COMMENT 'Sắp xếp thứ tự nếu có nhiều banner cùng vị trí',
+  `ngay_bat_dau` datetime DEFAULT NULL,
+  `ngay_ket_thuc` datetime DEFAULT NULL,
+  `trang_thai` tinyint(1) DEFAULT '1' COMMENT '1 = Hiển thị, 0 = Ẩn'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
 -- =========================================================
 -- 2. BẢNG CẤP 1 (Phụ thuộc NGUOI_DUNG / DANH_MUC)
 -- =========================================================
