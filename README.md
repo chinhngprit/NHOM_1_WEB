@@ -1,3 +1,5 @@
+> Read in other languages: [Tiếng Việt](README.vi.md)
+
 # E-Commerce Website - FPT Shop
 
 <img width="960" height="313" alt="fpt-shop-banner" src="https://github.com/datweb07/NHOM_1_WEB/blob/main/images/fpt-shop-banner.png" />
@@ -185,6 +187,10 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 ## License
 
 This project is released under the **MIT License**. See the [LICENSE.md](LICENSE.md) file for full details.
+
+### Third-Party Licenses
+
+This project uses various third-party libraries and services. For detailed information about all third-party dependencies, their licenses, and compliance requirements, please see [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
 
 ## Track the class project at this [link](https://docs.google.com/document/d/1SXeumwh1u8Yp0dC2vJMpMznbU5E-hHp4QlYRMehpj54/edit?fbclid=IwY2xjawP7fhlleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEedb2YK7uGIXycjsky8VB1DFG-L3-gWnW-waFfYHy-auBXTEFJHKVo2hiwIss_aem_jiqtsPn96N6dYubaf0h3ow&tab=t.n8hb9b8xnj2z)
 
