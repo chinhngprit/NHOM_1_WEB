@@ -760,6 +760,10 @@ ob_start();
                         </div>
                     </div>
                 <?php endforeach; ?>
+            <?php else: ?>
+                <div class="col-12">
+                    <p class="text-muted small p-3">Chưa có sản phẩm laptop</p>
+                </div>
             <?php endif; ?>
         </div>
     </div>
@@ -800,7 +804,7 @@ ob_start();
                 <?php endforeach; ?>
             <?php else: ?>
                 <div class="col-12">
-                    <p class="text-muted small p-3">Chưa có sản phẩm phụ kiện.</p>
+                    <p class="text-muted small p-3">Chưa có sản phẩm phụ kiện</p>
                 </div>
             <?php endif; ?>
         </div>
