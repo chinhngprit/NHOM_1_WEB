@@ -4,6 +4,9 @@ require_once __DIR__ . '/../vendor/autoload.php';
 require_once __DIR__ . '/../app/core/EnvSetup.php';
 
 $envConfig = EnvSetup::env(dirname(__DIR__));
+$app_url = $envConfig('APP_URL') ?: 'http://localhost:3000/';
+
+define('BASE_URL', rtrim($app_url, '/'));
 
 define('DB_HOST', $envConfig('DB_HOST'));
 define('DB_NAME', $envConfig('DB_DATABASE'));
