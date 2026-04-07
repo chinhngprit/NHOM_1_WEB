@@ -3,7 +3,7 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 require_once __DIR__ . '/../app/core/EnvSetup.php';
 
-$envConfig = EnvSetup::env(__DIR__);
+$envConfig = EnvSetup::env(dirname(__DIR__));
 
 define('DB_HOST', $envConfig('DB_HOST'));
 define('DB_NAME', $envConfig('DB_DATABASE'));
