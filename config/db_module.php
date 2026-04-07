@@ -3,7 +3,7 @@ require_once "config.php";
 
 function taoKetNoi(&$link)
 {
-    $link = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+    $link = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME, DB_PORT);
     if (mysqli_connect_errno()) {
         echo "Lỗi kết nối đến máy chủ: " . mysqli_connect_error();
         exit();
