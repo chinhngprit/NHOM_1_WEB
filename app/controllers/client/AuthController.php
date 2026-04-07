@@ -3,7 +3,7 @@
 namespace App\Controllers\Client;
 
 require_once __DIR__ . '/../../core/Session.php';
-require_once __DIR__ . '/../../core/functions.php';
+require_once __DIR__ . '/../../core/Functions.php';
 require_once __DIR__ . '/../../models/roles/KhachHang.php';
 
 use App\Core\Session;
