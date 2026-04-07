@@ -89,7 +89,7 @@
         <div class="col-md-7 col-lg-6 col-xl-5">
           <div class="text-center mb-4">
             <img
-              src="../../../../images/fpt-shop-banner.png"
+              src="<?= BASE_URL ?>/images/fpt-shop-banner.png"
               alt="FPT Shop"
               style="height: 100px"
             />
