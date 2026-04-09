@@ -17,7 +17,7 @@ class ChiTietGio extends BaseModel
         $gioHangId = (int)$gioHangId;
         
         $sql = "SELECT ctg.*, 
-                       pbsp.ten_phien_ban, pbsp.mau_sac, pbsp.dung_luong, pbsp.ram,
+                       pbsp.ten_phien_ban, pbsp.mau_sac,
                        pbsp.gia_ban, pbsp.so_luong_ton,
                        sp.ten_san_pham, sp.slug,
                        (SELECT url_anh FROM hinh_anh_san_pham 
